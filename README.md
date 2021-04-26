@@ -4,7 +4,7 @@
 - One file contains the raw pipe-delimited data (`data.csv`) without a header row.
 - The other file (`headers.txt`) contains the headers in the same order as the data in `data.csv`, but each header is a separate row. 
 E.g. the first column in `data.csv` is `Order ID`, the next is `Order Date` and so on.
-- Write a program that takes the data from both files, transforms into a single CSV file with both header row and data, and finally loads it into a database using the provided function.
+- Write a program that takes the data from both files, transforms into a single CSV file with both header row and data in a comma-separated format (so not the source pipe-delimiter), and finally loads it into a database using the provided function.
 - Use the class provided in `src/main.py`, start your code in the class's `run` function, and write as if this were production-ready code. 
 - We are not using a real database here, so just pretend that the Database class's `load_file` function handles everything for us.
 
